@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Personal config (don't share your credentials!)
+mcp_settings.json
+**/mcp_settings.json
+.bob/
+
+# Planning docs (optional - remove if you want to share them)
+jira-mcp-server-plan.md
+jira-mcp-architecture.md
+jira-mcp-implementation-guide.md
+jira-mcp-summary.md
+
+# Made with Bob
