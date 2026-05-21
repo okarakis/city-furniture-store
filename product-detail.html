@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Product Details - City Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="logo">
+                <h1>🛋️ City Furniture</h1>
+            </div>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cart-icon" type="button" aria-label="View cart">
+                <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                <span aria-hidden="true">🛒</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li aria-current="page" id="breadcrumb-product">Product Details</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Product Detail Section -->
+        <section class="product-detail" aria-labelledby="product-title">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <!-- Product Images -->
+                    <div class="product-detail-images">
+                        <div class="main-image-container">
+                            <img id="main-product-image" src="" alt="" class="main-product-image" width="600" height="600">
+                            <span id="product-badge" class="product-badge" style="display: none;"></span>
+                        </div>
+                        <div class="thumbnail-gallery" id="thumbnail-gallery">
+                            <!-- Thumbnails will be dynamically added -->
+                        </div>
+                    </div>
+
+                    <!-- Product Information -->
+                    <div class="product-detail-info">
+                        <h1 id="product-title" class="product-detail-title">Loading...</h1>
+                        
+                        <div class="product-detail-price-section">
+                            <span id="product-price" class="product-detail-price">$0</span>
+                            <span id="product-stock" class="product-stock">In Stock</span>
+                        </div>
+
+                        <div class="product-detail-description">
+                            <h2>Description</h2>
+                            <p id="product-description">Loading product details...</p>
+                        </div>
+
+                        <div class="product-detail-features">
+                            <h2>Features</h2>
+                            <ul id="product-features">
+                                <!-- Features will be dynamically added -->
+                            </ul>
+                        </div>
+
+                        <div class="product-detail-specs">
+                            <h2>Specifications</h2>
+                            <dl id="product-specs">
+                                <!-- Specifications will be dynamically added -->
+                            </dl>
+                        </div>
+
+                        <div class="product-detail-actions">
+                            <div class="quantity-selector">
+                                <label for="quantity">Quantity:</label>
+                                <button type="button" class="quantity-btn" id="decrease-qty" aria-label="Decrease quantity">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" aria-label="Product quantity">
+                                <button type="button" class="quantity-btn" id="increase-qty" aria-label="Increase quantity">+</button>
+                            </div>
+                            <button type="button" class="add-to-cart-btn-large" id="add-to-cart-detail">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="product-detail-meta">
+                            <p><strong>SKU:</strong> <span id="product-sku">N/A</span></p>
+                            <p><strong>Category:</strong> <span id="product-category">Furniture</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Products Section -->
+                <div class="related-products">
+                    <h2 class="section-title">You May Also Like</h2>
+                    <div class="product-grid" id="related-products-grid">
+                        <!-- Related products will be dynamically added -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="sr-only" id="cart-status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

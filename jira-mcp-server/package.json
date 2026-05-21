@@ -7,7 +7,7 @@
     "jira-mcp-server": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc && chmod +x build/index.js",
+    "build": "tsc",
     "watch": "tsc --watch",
     "prepare": "npm run build"
   },
