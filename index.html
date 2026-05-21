@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Furniture - Modern Home Furnishings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="logo">
+                <h1>🛋️ City Furniture</h1>
+            </div>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cart-icon" type="button" aria-label="View cart">
+                <span class="cart-count" aria-live="polite" aria-atomic="true">0</span>
+                <span aria-hidden="true">🛒</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h2 class="hero-title" id="hero-title">Transform Your Space</h2>
+                <p class="hero-subtitle">Discover premium furniture that brings comfort and style to your home</p>
+                <a class="cta-button" href="#products">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="products" id="products" aria-labelledby="products-title">
+            <div class="container">
+                <h2 class="section-title" id="products-title">Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card reveal-on-scroll" data-product="modern-sofa" onclick="window.location.href='product-detail.html?product=modern-sofa'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop" alt="Modern Sofa" width="400" height="300" loading="lazy" decoding="async">
+                            <span class="product-badge product-badge--new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Modern Sofa</h3>
+                            <p class="product-description">Comfortable 3-seater with premium fabric</p>
+                            <div class="product-footer">
+                                <span class="product-price">$1,299</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card reveal-on-scroll" data-product="dining-table" onclick="window.location.href='product-detail.html?product=dining-table'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=400&h=300&fit=crop" alt="Dining Table" width="400" height="300" loading="lazy" decoding="async">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Dining Table</h3>
+                            <p class="product-description">Solid wood table for 6 people</p>
+                            <div class="product-footer">
+                                <span class="product-price">$899</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card reveal-on-scroll" data-product="office-chair" onclick="window.location.href='product-detail.html?product=office-chair'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=400&h=300&fit=crop" alt="Office Chair" width="400" height="300" loading="lazy" decoding="async">
+                            <span class="product-badge product-badge--sale">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Office Chair</h3>
+                            <p class="product-description">Ergonomic design with lumbar support</p>
+                            <div class="product-footer">
+                                <span class="product-price">$349</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card reveal-on-scroll" data-product="bookshelf" onclick="window.location.href='product-detail.html?product=bookshelf'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=400&h=300&fit=crop" alt="Bookshelf" width="400" height="300" loading="lazy" decoding="async">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bookshelf</h3>
+                            <p class="product-description">5-tier modern storage solution</p>
+                            <div class="product-footer">
+                                <span class="product-price">$449</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card reveal-on-scroll" data-product="bed-frame" onclick="window.location.href='product-detail.html?product=bed-frame'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=300&fit=crop" alt="Bed Frame" width="400" height="300" loading="lazy" decoding="async">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bed Frame</h3>
+                            <p class="product-description">Queen size with upholstered headboard</p>
+                            <div class="product-footer">
+                                <span class="product-price">$799</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card reveal-on-scroll" data-product="coffee-table" onclick="window.location.href='product-detail.html?product=coffee-table'" style="cursor: pointer;">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=400&h=300&fit=crop" alt="Coffee Table" width="400" height="300" loading="lazy" decoding="async">
+                            <span class="product-badge product-badge--popular">Popular</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Coffee Table</h3>
+                            <p class="product-description">Glass top with wooden base</p>
+                            <div class="product-footer">
+                                <span class="product-price">$299</span>
+                                <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section-title" id="about-title">About City Furniture</h2>
+                <p class="info-text">We design modern furniture collections that balance comfort, craftsmanship, and everyday functionality for every room in your home.</p>
+            </div>
+        </section>
+
+        <section class="info-section info-section--alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title" id="contact-title">Contact Us</h2>
+                <p class="info-text">Visit our showroom, call our team for design advice, or email us to learn more about product availability and delivery options.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="sr-only" id="cart-status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
