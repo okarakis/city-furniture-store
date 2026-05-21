@@ -74,4 +74,3 @@ export class JiraClient {
   }
 }
 
-// Made with Bob
