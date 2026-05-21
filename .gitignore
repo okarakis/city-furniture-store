@@ -4,14 +4,15 @@ package-lock.json
 
 # Build outputs
 jira-mcp-server/build/
-
-# Environment variables
-.env
-.env.local
+jira-mcp-server/node_modules/
+jira-mcp-server/package-lock.json
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
@@ -20,9 +21,29 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 
 # Temporary files
 *.tmp
-.bob/
+.temp/
+*.cache
 
-# Made with Bob
+# Student work (will be created during lab)
+index.html
+styles.css
+script.js
+product-detail.html
+city-furniture-store/
+
+# Test files
+*.test.js
+coverage/
+
+# Distribution
+dist/

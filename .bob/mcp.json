@@ -2,12 +2,15 @@
   "mcpServers": {
     "jira": {
       "command": "node",
-      "args": ["REPLACE_WITH_FULL_PATH_TO/jira-mcp-server/build/index.js"],
+      "args": ["./jira-mcp-server/build/index.js"],
       "env": {
         "JIRA_HOST": "your-domain.atlassian.net",
         "JIRA_EMAIL": "your-email@example.com",
         "JIRA_API_TOKEN": "your-api-token-here"
-      }
+      },
+      "alwaysAllow": ["search_issues"]
     }
   }
 }
+
+
